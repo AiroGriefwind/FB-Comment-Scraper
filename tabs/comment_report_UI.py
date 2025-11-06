@@ -1,4 +1,8 @@
 import streamlit as st
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+
 from utils.firebase_manager import savedata, getdatapath
 
 # 初始化假数据
