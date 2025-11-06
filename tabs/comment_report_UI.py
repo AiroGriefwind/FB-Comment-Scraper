@@ -1,8 +1,7 @@
 import streamlit as st
-from utils.firebase_manager import save_data, get_data
-from utils.firebase_manager import firebase_manager as fm
+from utils.firebase_manager import save_data, get_data, initialize_firebase
 
-fm.initialize_firebase()
+initialize_firebase()
 
 FAKE_DATA = [
     {"user_id": "u001", "comment": "這是一條假留言", "time": "2025-01-01 12:00", "status": "normal"},
